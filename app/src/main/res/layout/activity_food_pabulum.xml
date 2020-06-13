@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FoodPabulumActivity"
+    android:background="#DCE4E7">
+
+    <swu.xl.xltoolbar.XLToolBar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_id="@layout/pabulum_tool_bar_layout"
+        />
+
+    <swu.xl.healthdiet.FoodPabulum.XLGridRecyclerView
+        android:id="@+id/recycler"
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

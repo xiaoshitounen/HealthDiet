@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:background="@drawable/main_bg">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:orientation="vertical">
+
+       <swu.xl.healthdiet.SelfView.XLTextView
+           android:id="@+id/food_match"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/food_match"
+           style="@style/FoodMenuText"
+           />
+
+       <swu.xl.healthdiet.SelfView.XLTextView
+           android:id="@+id/food_pabulum"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/food_pabulum"
+           style="@style/FoodMenuText"
+           android:background="@drawable/food_menu_bg"
+           />
+
+       <swu.xl.healthdiet.SelfView.XLTextView
+           android:id="@+id/food_about"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/food_about"
+           style="@style/FoodMenuText"
+           />
+
+   </LinearLayout>
+
+</RelativeLayout>

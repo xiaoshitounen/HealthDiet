@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/food_icon"
+        android:tag="@string/food_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_launcher_background"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/food_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:orientation="vertical">
+
+        <swu.xl.healthdiet.SelfView.XLTextView
+            android:id="@+id/food_name"
+            android:tag="@string/food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称"
+            android:textSize="26sp"
+            />
+
+        <swu.xl.healthdiet.SelfView.XLTextView
+            android:id="@+id/food_no"
+            android:tag="@string/food_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="不能吃的东西"
+            android:textSize="16sp"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+
+</RelativeLayout>
